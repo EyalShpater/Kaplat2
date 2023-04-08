@@ -11,6 +11,7 @@ namespace Kaplat2
     {
         const int k_ID = 319041166;
         const int k_YEAR = 1998;
+
         public static void Main(string[] args)
         {
             string getResponse = Get();
@@ -31,8 +32,8 @@ namespace Kaplat2
         public static string CreatePostJsonObject(string i_GetResponse)
         {
             var jsonObject = new JObject {
-                { "id", k_YEAR },
-                { "year", k_ID },
+                { "id", k_ID },
+                { "year", k_YEAR },
                 { "requestId",  i_GetResponse }
             };
 
